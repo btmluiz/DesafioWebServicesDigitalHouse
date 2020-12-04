@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import dev.luizfelipe.desafiowebservices_digitalhouse.R
-import dev.luizfelipe.desafiowebservices_digitalhouse.ui.main.MainActivity
+import dev.luizfelipe.desafiowebservices_digitalhouse.ui.sign.SignActivity
 
 class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -13,7 +13,7 @@ class SplashActivity : AppCompatActivity() {
         setContentView(R.layout.activity_splash)
 
         Handler(mainLooper).postDelayed({
-            startActivity(Intent(this, MainActivity::class.java))
+            startActivity(Intent(this, SignActivity::class.java))
             finish()
         }, 1500)
     }
